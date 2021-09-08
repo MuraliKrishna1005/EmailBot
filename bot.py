@@ -1,12 +1,7 @@
-import discord
+import discord, sqlite3, re, os, random, requests
 from discord.ext import commands
-import sqlite3
-import re
-import os
-import random
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
-import requests
 from keep_alive import keep_alive
 
 conn = sqlite3.connect('bot.db')
